@@ -1,0 +1,62 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(46, 7, 62); /* Dark purple background */
+    margin: 0;
+    padding: 20px;
+    color: #e2b8b8;
+}
+
+/* Main container */
+.info-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Heading styles */
+.info-container h1 {
+    font-size: 2.5em;
+    color: #e2b8b8;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    font-size: 1.2em;
+    color: #e2b8b8;
+    margin-bottom: 30px;
+}
+
+/* Measure box styling */
+.measure-box {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px; /* Curved corners */
+    background-color: #e2b8b8; /* Light pink background */
+    color: rgb(46, 7, 62); /* Dark purple text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.measure-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    color: inherit;
+}
+
+.measure-box p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Alternate box style */
+.measure-box.alternate {
+    background-color: rgb(46, 7, 62); /* Dark purple background */
+    color: #e2b8b8; /* Light pink text */
+}
+
+/* Hover effect */
+.measure-box:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
