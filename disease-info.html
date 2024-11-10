@@ -3,32 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disease Information Hub</title>
-    <link rel="stylesheet" href="d-styles.css">
+    <title>Mental Health Information Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(46, 7, 62); /* Dark purple background */
+    color: #e2b8b8; /* Soft pink text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+header {
+    background-color: #e2b8b8; /* Soft pink background */
+    color: rgb(46, 7, 62); /* Dark purple text */
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the screen */
+    margin: 0 auto;
+}
+
+.header-section {
+    text-align: center; /* Center the content */
+    max-width: 100%; /* Limit the max width */
+    width: 100%;
+    padding: 0 20px; /* Padding for spacing */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Social Icons in Header (optional) */
+.social-icons-header a {
+    color: rgb(46, 7, 62);
+    margin-right: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons-header a:hover {
+    color: #000000;
+}
+/* Disorder List Grid */
+.disorder-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Disorder Boxes */
+.disorder-box {
+    background-color: #e2b8b8; /* Soft pink background */
+    border: 2px solid rgb(46, 7, 62); /* Dark purple border */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.disorder-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.disorder-box a {
+    text-decoration: none;
+    color: rgb(46, 7, 62); /* Dark purple text */
+    display: block;
+    padding: 15px;
+}
+
+.disorder-box img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.disorder-box h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(46, 7, 62);
+}
+footer {
+    background-color: #e2b8b8; /* Soft pink background */
+    color: rgb(46, 7, 62); /* Dark purple text */
+    padding: 40px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(46, 7, 62); /* Dark purple */
+}
+
+.footer-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: rgb(46, 7, 62);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #73247b; /* Slightly darker pink */
+}
+
+.social-icons-footer a {
+    color: rgb(46, 7, 62); /* Dark purple */
+    margin-right: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons-footer a:hover {
+    color: #73247b;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgb(46, 7, 62);
+    font-size: 16px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+    </style>
 </head>
 <body>
-    <div class="info-container">
-        <h1>Disease Information Hub</h1>
-        <p>Find essential information about various diseases, their symptoms, and preventive measures.</p>
-        
-        <!-- Disease Information Boxes -->
-        <div class="disease-box">
-            <h2>Diabetes</h2>
-            <p>Diabetes is a chronic condition that affects how your body turns food into energy...</p>
+    <header>
+        <div class="header-container">
+            <div class="header-section">
+                <h1>Mental Health Information Hub</h1>
+                <p>Explore common mental health disorders, understand symptoms, and discover solutions.</p>
+            </div>
         </div>
-        
-        <div class="disease-box alternate">
-            <h2>Hypertension</h2>
-            <p>Hypertension, or high blood pressure, is a common condition where blood force against artery walls...</p>
-        </div>
-        
-        <div class="disease-box">
-            <h2>Asthma</h2>
-            <p>Asthma is a respiratory condition marked by spasms in the bronchi of the lungs, causing difficulty in breathing...</p>
-        </div>
+    </header>
 
-        <!-- Add more disease boxes as needed -->
-        
+    <div class="disorder-list">
+        <!-- Disorder Links with Images -->
+        <div class="disorder-box">
+            <a href="d/anxiety.html">
+                <img src="d/images/anxiety.png" alt="Anxiety">
+                <h3>Anxiety</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/depression.html">
+                <img src="d/images/depression.png" alt="Depression">
+                <h3>Depression</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/ocd.html">
+                <img src="d/images/ocd.png" alt="OCD">
+                <h3>Obsessive-Compulsive Disorder (OCD)</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/ptsd.html">
+                <img src="d/images/ptsd.png" alt="PTSD">
+                <h3>Post-Traumatic Stress Disorder (PTSD)</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/bipolar.html">
+                <img src="d/images/bipolar.png" alt="Bipolar Disorder">
+                <h3>Bipolar Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/schizophrenia.html">
+                <img src="d/images/schizophrenia.png" alt="Schizophrenia">
+                <h3>Schizophrenia</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/adhd.html">
+                <img src="d/images/adhd.png" alt="ADHD">
+                <h3>Attention Deficit Hyperactivity Disorder (ADHD)</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/eating.html">
+                <img src="d/images/eating.png" alt="Eating Disorders">
+                <h3>Eating Disorders</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/phobia.html">
+                <img src="d/images/phobia.png" alt="Phobias">
+                <h3>Phobias</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/autism.html">
+                <img src="d/images/autism.png" alt="Autism Spectrum Disorder">
+                <h3>Autism Spectrum Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/panic.html">
+                <img src="d/images/panic.png" alt="Panic Disorder">
+                <h3>Panic Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/dementia.html">
+                <img src="d/images/dementia.png" alt="Dementia">
+                <h3>Dementia</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/addiction.html">
+                <img src="d/images/addiction.png" alt="Substance Use Disorder">
+                <h3>Substance Use Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/insomnia.html">
+                <img src="d/images/insomnia.png" alt="Insomnia">
+                <h3>Insomnia</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/borderline.html">
+                <img src="d/images/border.png" alt="Borderline Personality Disorder">
+                <h3>Borderline Personality Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/socialanxiety.html">
+                <img src="d/images/socialanxiety.png" alt="Social Anxiety Disorder">
+                <h3>Social Anxiety Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/dissociative.html">
+                <img src="d/images/dissociative.png" alt="Dissociative Disorders">
+                <h3>Dissociative Disorders</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/pmdd.html">
+                <img src="d/images/pmdd.png" alt="Premenstrual Dysphoric Disorder (PMDD)">
+                <h3>Premenstrual Dysphoric Disorder (PMDD)</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/psychosis.html">
+                <img src="d/images/psychosis.png" alt="Psychosis">
+                <h3>Psychosis</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/hoarding.html">
+                <img src="d/images/hoarding.png" alt="Hoarding Disorder">
+                <h3>Hoarding Disorder</h3>
+            </a>
+        </div>
+        <div class="disorder-box">
+            <a href="d/cyclothymic.html">
+                <img src="d/images/cyclothymic.png" alt="Cyclothymic Disorder">
+                <h3>Cyclothymic Disorder</h3>
+            </a>
+        </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing top-notch mental health services to our clients.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="a-c.html">About</a></li>
+                    <li><a href="a-c.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mend Well. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

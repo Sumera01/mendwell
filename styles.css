@@ -1,9 +1,30 @@
+/* Body styling */
 body {
-    margin: 50px;
-    font-family: "ArchivoBlack", sans-serif; /* Set font to Archivo Black */
+    font-family: "Archivo Black", sans-serif;
     background-color: #e2b8b8;
-    color: rgb(46, 7, 62);
     text-align: center;
+}
+
+/* Header Section */
+.header {
+    padding: 20px;
+    background-color: #2e073e;
+    color: #e2b8b8;
+    border-radius: 10px;
+}
+
+.quote {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: left;
+    width: 230px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #2e073e;
+    color: #e2b8b8;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .container {
@@ -21,117 +42,123 @@ body {
     flex: 2;
 }
 
-
-.archivo-black-regular {
-    font-family: "Archivo Black", sans-serif; /* Set font to Archivo Black */
-    font-weight: 400;  /* Regular weight */
-    font-style: normal;
-}
-
-.archivo-black-regular h1 {
+.center h1 {
     font-size: 60px;
-    color: rgb(46, 7, 62);
-    margin: 0;
+    color: #e2b8b8;
 }
 
-.archivo-black-regular h2 {
-    font-size: 60px;
-    color: rgb(46, 7, 62);
-    margin: 0;
+.center h4 {
+    margin-right: 50px;
+    color: #e2b8b8;
 }
 
-.archivo-black-regular h3 {
-    font-size: 40px;
-    color: rgb(46, 7, 62);
-}
-
-
-p{
+.center p {
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 300px;
+    font-weight: 300;
+    color: #e2b8b8;
 }
 
 .center .buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 60px;
 }
 
 .center .buttons a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    color: white;
+    color:  rgb(46, 7, 62);;
 }
 
 .center .buttons .contact {
-    background-color: rgb(46, 7, 62);
+    background-color:  #e2b8b8;
 }
 
 .center .buttons .read-more {
     background-color: transparent;
-    border: 1px solid white;
-}
-
-.navbar {
-    font-family:  "Archivo Black", sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    color: rgb(46, 7, 62);
-}
-
-.image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* New styles for facts section */
-.facts-container {
-    transition: background-color 0.5s ease; /* Smooth transition for background color */
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.facts-section {
-    width: 80%;
-    margin: 50px auto; /* Center the section */
-    text-align: center; /* Center text */
-}
-
-.animated-boxes {
-    position: relative; /* Allow for positioning of boxes */
-    overflow: hidden; /* Hide overflow for animation effect */
-}
-
-.box {
-    background-color:rgb(46, 7, 62); /* Yellow background for better visibility */
-    padding: 30px; /* Increase padding for larger size */
-    border-radius: 10px; /* More rounded corners */
-    margin: 20px 0; /* Space between boxes */
-    font-size: 22px; /* Increase font size for readability */
-    opacity: 0; /* Start invisible */
-    transform: translateY(20px); /* Start below */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Animation transition */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    border: 1px solid #e2b8b8;
     color: #e2b8b8;
 }
 
-.box-image {
-    margin-right: 15px; /* Space between image and text */
-    width: 50px; /* Set width of the image */
-    height: auto; /* Maintain aspect ratio */
+/* Services Title */
+.services-title {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 100px;
+    font-size: 30px;
+    color: rgb(46, 7, 62);
 }
-/* Footer styles */
+
+/* Content Boxes Section */
+.content-boxes {
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.box-content {
+    background-color: rgb(46, 7, 62);
+    color: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e2b8b8;
+}
+
+.box-content p {
+    font-size: 18px;
+}
+.box-content {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.box-content:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the "Learn More" button */
+.box-content button {
+    background-color:#e2b8b8;
+    color: rgb(46, 7, 62);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+
+.box-content button:hover {
+    background-color:  rgb(46, 7, 62);
+    color:#e2b8b8;
+}
+/* Footer Styles */
 footer {
-    background-color: rgb(46, 7, 62); /* Dark background */
+    background-color: rgb(46, 7, 62);
     color: white;
     padding: 40px 0;
     margin-top: 40px;
@@ -182,116 +209,10 @@ footer {
     color: #e2b8b8;
 }
 
-.social-icons-footer a {
-    color: white;
-    margin-right: 10px;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-icons-footer a:hover {
-    color: #e2b8b8;
-}
-
 .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #e2b8b8;
-    font-size: 16px;
-}
-
-.footer-bottom p {
-    margin: 0;
-}
-/* Content Boxes Section Styles */
-.content-boxes {
-    width: 80%;
-    margin: 80px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    
-}
-
-.box-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.box-content {
     background-color: rgb(46, 7, 62);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
     color: white;
-    flex: 1;
-    padding: 70px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Start invisible */
-    transform: translateY(20px); /* Start below */
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.box-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #e2b8b8;
-}
-
-.box-content p {
-    font-size: 18px;
-}
-
-/* Adding scroll animation for content boxes */
-.animated-box {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* Main container - keeps the default or a light background */
-.content-boxes {
-    background-color: #e2b8b8; /* Light gray background for contrast */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Individual service boxes with purple background */
-.box-content {
-    padding: 20px;
-    background-color:  rgb(46, 7, 62); /* Purple theme color */
-    border-radius: 8px;
-    text-align: center;
-    color: #fff; /* Ensure text is readable on purple */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Add spacing between boxes */
-}
-
-/* Text and button styling inside each box */
-.box-content h3 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #fff; /* White text for readability */
-}
-
-.box-content p {
-    margin: 10px 0;
-    color: #e0e0e0; /* Lighter text color */
-}
-
-.box-content button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color:#e2b8b8  ;/* Contrast button color */
-    color: rgb(46, 7, 62);/* Button text matches theme */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.box-content button:hover {
-    background-color: rgb(46, 7, 62) ;/* Contrast button color */
-    color: #e2b8b8;
 }

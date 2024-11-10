@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Information Hub</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(46, 7, 62);
+            /* Dark purple background */
+            color: #e2b8b8;
+            /* Soft pink text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #e2b8b8;
+            /* Soft pink background */
+            color: rgb(46, 7, 62);
+            /* Dark purple text */
+            width: 100%;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* Full width of the screen */
+            margin: 0 auto;
+        }
+
+        .header-section {
+            text-align: center;
+            /* Center the content */
+            max-width: 100%;
+            /* Limit the max width */
+            width: 100%;
+            padding: 0 20px;
+            /* Padding for spacing */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 90%;
+            background-color: #e2b8b8;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: rgb(46, 7, 62);
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #f6c9c9;
+            /* Light pink for each FAQ box */
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-10px);
+            /* Lift the FAQ box */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            /* Add shadow to enhance the lift effect */
+        }
+
+        .faq-item h3 {
+            font-size: 1.4rem;
+            color: rgb(46, 7, 62);
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .faq-item h3:hover {
+            color: #73247b;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #000;
+            display: none;
+            padding-left: 20px;
+            margin: 10px;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: rgb(46, 7, 62);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle.open {
+            transform: rotate(45deg);
+        }
+
+        /* Social Icons in Header */
+        .social-icons-header a {
+            color: rgb(46, 7, 62);
+            margin-right: 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons-header a:hover {
+            color: #000000;
+        }
+
+        /* Disorder List Grid */
+        .disorder-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Footer Styling */
+
+        .footer {
+            background-color: rgb(46, 7, 62);
+            color: #f1c9c9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #f1c9c9;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-section">
+                <h1>Frequently Asked Questions (FAQ)</h1>
+                <p>Find answers to frequently asked questions about mental health and wellness.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq1')">What is mental health? <span id="faq-toggle1" class="faq-toggle">+</span>
+            </h3>
+            <p id="faq1">Mental health includes our emotional, psychological, and social well-being. It affects how we
+                think, feel, and act, and also how we handle stress, relate to others, and make decisions.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq2')">How do I know if I have a mental health disorder? <span id="faq-toggle2"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq2">If you experience persistent feelings of sadness, hopelessness, or irritability, or have
+                trouble functioning in daily life, it could indicate a mental health disorder. Seeking help from a
+                professional is important.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq3')">What should I do if I feel anxious or depressed? <span id="faq-toggle3"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq3">It's essential to talk to someone you trust or consult a mental health professional. Cognitive
+                Behavioral Therapy (CBT) and other therapies can be very helpful in managing anxiety and depression.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq4')">Is mental health treatment expensive? <span id="faq-toggle4"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq4">The cost of treatment can vary. Many professionals offer sliding scale fees based on your
+                income. Additionally, some insurance plans cover mental health services.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq5')">How can I improve my mental health? <span id="faq-toggle5"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq5">Improving mental health involves maintaining a balanced lifestyle, including physical activity,
+                a healthy diet, good sleep hygiene, and strong social connections. Seeking professional help when needed
+                is also essential.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq6')">What are the symptoms of anxiety? <span id="faq-toggle6"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq6">Common symptoms of anxiety include constant worry, restlessness, fatigue, difficulty
+                concentrating, and physical symptoms like sweating and rapid heartbeat.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq7')">What is Cognitive Behavioral Therapy (CBT)? <span id="faq-toggle7"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq7">CBT is a form of psychotherapy that helps people identify and change negative thought patterns
+                and behaviors that contribute to their mental health issues, including depression and anxiety.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq8')">What is the difference between stress and anxiety? <span id="faq-toggle8"
+                    class="faq-toggle">+</span></h3>
+            <p id="faq8">Stress is a response to a specific external situation, while anxiety is a persistent feeling of
+                worry or fear that can occur even without an identifiable cause.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer('faq9')">Can mental health disorders be treated without medication? <span
+                    id="faq-toggle9" class="faq-toggle">+</span></h3>
+            <p id="faq9">Yes, many mental health disorders can be treated with therapy, lifestyle changes, and social
+                support, though medication may also be recommended for some individuals depending on the severity of
+                their symptoms.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 MendWell. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+    <script>
+        // Toggle the visibility of the answer when clicking the question
+        function toggleAnswer(faqId) {
+            const answer = document.getElementById(faqId);
+            const toggleIcon = document.getElementById('faq-toggle' + faqId.replace('faq', ''));
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+                toggleIcon.textContent = "-";
+            } else {
+                answer.style.display = "none";
+                toggleIcon.textContent = "+";
+            }
+        }
+    </script>
+</body>
+
+</html>
