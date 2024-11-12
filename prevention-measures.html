@@ -3,37 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prevention Measures</title>
-    <link rel="stylesheet" href="p-styles.css">
+    <title>Roadmap to Well-Being: Prevention Measures</title>
+    <link rel="icon" type="image/x-icon" href="favi.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2b8b8;
+            margin: 0;
+            padding: 0;
+            color: #2e073e;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e2b8b8;
+            background-color: #2e073e;
+            padding: 30px;
+        }
+
+        .roadmap {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 50px;
+        }
+
+        .road {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            width: 10px;
+            height: 100%;
+            background-color: #2e073e;
+            border-radius: 5px;
+        }
+
+        .step {
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+            background-color: #2e073e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(46, 7, 62, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            color: #e2b8b8;
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(46, 7, 62, 0.4);
+        }
+
+        .step-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e073e;
+            background-color: #e2b8b8;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            position: absolute;
+            left: -50px;
+        }
+
+        .step-content {
+            flex: 1;
+            color: #e2b8b8;
+        }
+
+        .step-content h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #e2b8b8;
+        }
+
+        .step-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .step-content li {
+            margin: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .step-content li:before {
+            content: "•";
+            color: #e2b8b8;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+        }
+
+        .step img {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: rgb(46, 7, 62);
+            color: #f1c9c9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #f1c9c9;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .roadmap {
+                padding-left: 20px;
+            }
+
+            .step-number {
+                left: -30px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="info-container">
-        <h1>Prevention Measures</h1>
-        <p>Explore essential preventive steps to protect your health and well-being.</p>
-        
-        <!-- Preventive Measure Boxes -->
-        <div class="measure-box">
-            <h2>Hand Hygiene</h2>
-            <p>Regular handwashing with soap and water for at least 20 seconds can help prevent the spread of infections.</p>
+    <h1>Roadmap to Well-Being: Prevention Measures</h1>
+    <div class="container">
+       
+    
+        <div class="roadmap">
+            <div class="road"></div>
+    
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-number">1</div>
+                <img src="p-img1.png" alt="Hand Hygiene">
+                <div class="step-content">
+                    <h2>Hand Hygiene</h2>
+                    <ul>
+                        <li>Washing hands regularly with soap and water is a simple yet powerful way to prevent illness. It eliminates germs that can be transferred from surfaces and other people. Aim for at least 20 seconds of washing, especially before meals, after restroom use, or contact with public spaces.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-number">2</div>
+                <img src="p-img2.png" alt="Balanced Diet">
+                <div class="step-content">
+                    <h2>Balanced Diet</h2>
+                    <ul>
+                        <li>Maintaining a balanced diet strengthens your immune system, helps maintain a healthy weight, and fuels your body with essential nutrients. Include a variety of fruits, vegetables, proteins, and whole grains. Limit sugar and processed foods for optimal health benefits.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-number">3</div>
+                <img src="p-img3.png" alt="Quality Sleep">
+                <div class="step-content">
+                    <h2>Quality Sleep</h2>
+                    <ul>
+                        <li>Getting 7-8 hours of sleep is vital for physical and mental health. Good sleep improves mood, memory, and immune function, while also reducing the risk of chronic diseases. Establish a regular sleep routine and create a restful environment to improve sleep quality.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 4 -->
+            <div class="step">
+                <div class="step-number">4</div>
+                <img src="p-img4.png" alt="Physical Exercise">
+                <div class="step-content">
+                    <h2>Physical Exercise</h2>
+                    <ul>
+                        <li>Engaging in at least 30 minutes of exercise daily can improve cardiovascular health, build muscle, and support mental well-being. Activities like walking, cycling, or yoga help maintain a healthy weight and reduce the risk of chronic diseases.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 5 -->
+            <div class="step">
+                <div class="step-number">5</div>
+                <img src="p-img5.png" alt="Mindfulness & Relaxation">
+                <div class="step-content">
+                    <h2>Mindfulness & Relaxation</h2>
+                    <ul>
+                        <li>Practicing mindfulness, meditation, and deep breathing helps reduce stress, increases focus, and improves overall mental health. Taking time each day for relaxation techniques can also enhance resilience and provide better emotional balance.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 6 -->
+            <div class="step">
+                <div class="step-number">6</div>
+                <img src="p-img6.png" alt="Vaccinations">
+                <div class="step-content">
+                    <h2>Vaccinations</h2>
+                    <ul>
+                        <li>Staying up-to-date with vaccinations protects you and those around you from preventable diseases. Vaccines are especially important for children, the elderly, and individuals with chronic health conditions, helping build immunity and avoid outbreaks.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 7 -->
+            <div class="step">
+                <div class="step-number">7</div>
+                <img src="p-img7.png" alt="Regular Checkups">
+                <div class="step-content">
+                    <h2>Regular Checkups</h2>
+                    <ul>
+                        <li>Annual health checkups allow for early detection and prevention of potential health issues. Screenings for blood pressure, cholesterol, and glucose, along with physical exams, help maintain a healthy baseline and address concerns proactively.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 8 -->
+            <div class="step">
+                <div class="step-number">8</div>
+                <img src="p-img8.png" alt="Support Network">
+                <div class="step-content">
+                    <h2>Support Network</h2>
+                    <ul>
+                        <li>Building strong connections with friends, family, or support groups provides a sense of belonging and emotional security. Having a reliable support network can make it easier to navigate life's challenges and maintain positive mental health.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 9 -->
+            <div class="step">
+                <div class="step-number">9</div>
+                <img src="p-img9.png" alt="Community Involvement">
+                <div class="step-content">
+                    <h2>Community Involvement</h2>
+                    <ul>
+                        <li>Participating in community activities promotes a sense of purpose and connection. Volunteering, attending local events, or joining clubs allows for personal growth, builds new relationships, and fosters community well-being.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 10 -->
+            <div class="step">
+                <div class="step-number">10</div>
+                <img src="p-img10.png" alt="Emergency Plans">
+                <div class="step-content">
+                    <h2>Emergency Plans</h2>
+                    <ul>
+                        <li>Having an emergency plan prepares you for unexpected situations. Know emergency contacts, routes, and supplies for quick action in times of need. This planning can provide peace of mind and ensure safety for you and your loved ones.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 11 -->
+            <div class="step">
+                <div class="step-number">11</div>
+                <img src="p-img11.png" alt="Avoid Smoking & Alcohol">
+                <div class="step-content">
+                    <h2>Avoid Smoking & Alcohol</h2>
+                    <ul>
+                        <li>Reducing or eliminating tobacco and alcohol can greatly improve long-term health. These habits increase the risk of various diseases, and avoiding them promotes a healthier lifestyle, improved physical fitness, and reduced healthcare costs.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Step 12 -->
+            <div class="step">
+                <div class="step-number">12</div>
+                <img src="p-img12.png" alt="Mental Health Support">
+                <div class="step-content">
+                    <h2>Mental Health Support</h2>
+                    <ul>
+                        <li>Seeking mental health support, whether through counseling, therapy, or trusted friends, helps address emotional challenges. Proactively managing mental health is essential for overall well-being, resilience, and a fulfilling life.</li>
+                    </ul>
+                </div>
+            </div>
+    
         </div>
-        
-        <div class="measure-box">
-            <h2>Vaccination</h2>
-            <p>Vaccines play a critical role in building immunity against various diseases, ensuring community health.</p>
-        </div>
-        
-        <div class="measure-box">
-            <h2>Healthy Diet</h2>
-            <p>A balanced diet with fruits, vegetables, and whole grains boosts the immune system and prevents chronic diseases.</p>
-        </div>
-
-        <div class="measure-box">
-            <h2>Physical Exercise</h2>
-            <p>Regular physical activity helps maintain a healthy weight, strengthens muscles, and reduces the risk of many diseases.</p>
-        </div>
-
-        <!-- Add more preventive measure boxes as needed -->
-        
     </div>
-</body>
+    
+    <div class="footer">
+        <p>&copy; 2024 MendWell - Your Mental Health Companion</p>
+        <p><a href="index.html">Back to Homepage</a>|
+            <a href="a-c.html">Contact Us</a> |
+            <a href="disease-info.html"> Disease-Hub </a>|
+            <a href="bot.html"> Talk to Bot </a></p>
+    </div>
+    
+    </body>
 </html>
