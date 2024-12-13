@@ -1,11 +1,10 @@
-/* Body styling */
+
 body {
     font-family: "Archivo Black", sans-serif;
     background-color: #e2b8b8;
     text-align: center;
 }
 
-/* Header Section */
 .header {
     padding: 20px;
     background-color: #2e073e;
@@ -82,7 +81,6 @@ body {
     color: #e2b8b8;
 }
 
-/* Services Title */
 .services-title {
     margin-top: 50px;
     text-align: left;
@@ -91,7 +89,6 @@ body {
     color: rgb(46, 7, 62);
 }
 
-/* Content Boxes Section */
 .content-boxes {
     width: 80%;
     margin: 80px auto;
@@ -138,7 +135,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Styling for the "Learn More" button */
 .box-content button {
     background-color:#e2b8b8;
     color: rgb(46, 7, 62);
@@ -156,7 +152,6 @@ body {
     background-color:  rgb(46, 7, 62);
     color:#e2b8b8;
 }
-/* Footer Styles */
 footer {
     background-color: rgb(46, 7, 62);
     color: white;
